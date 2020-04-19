@@ -1,0 +1,49 @@
+04/18 09:20:48 PM | 
+04/18 09:20:48 PM | Parameters:
+04/18 09:20:48 PM | AUX_WEIGHT=0.4
+04/18 09:20:48 PM | BATCH_SIZE=96
+04/18 09:20:48 PM | CUTOUT_LENGTH=16
+04/18 09:20:48 PM | DATA_PATH=./data/
+04/18 09:20:48 PM | DATASET=FashionMNIST
+04/18 09:20:48 PM | DROP_PATH_PROB=0.2
+04/18 09:20:48 PM | EPOCHS=300
+04/18 09:20:48 PM | GENOTYPE=Genotype(normal=[[('sep_conv_3x3', 0), ('dil_conv_5x5', 1)], [('skip_connect', 0), ('dil_conv_3x3', 2)], [('sep_conv_3x3', 1), ('skip_connect', 0)], [('sep_conv_3x3', 1), ('skip_connect', 0)]], normal_concat=range(2, 6), reduce=[[('max_pool_3x3', 0), ('max_pool_3x3', 1)], [('max_pool_3x3', 0), ('skip_connect', 2)], [('skip_connect', 3), ('max_pool_3x3', 0)], [('skip_connect', 2), ('max_pool_3x3', 0)]], reduce_concat=range(2, 6))
+04/18 09:20:48 PM | GPUS=[0]
+04/18 09:20:48 PM | GRAD_CLIP=5.0
+04/18 09:20:48 PM | INIT_CHANNELS=36
+04/18 09:20:48 PM | LAYERS=20
+04/18 09:20:48 PM | LR=0.025
+04/18 09:20:48 PM | MOMENTUM=0.9
+04/18 09:20:48 PM | NAME=FashionMNIST
+04/18 09:20:48 PM | PATH=augments\FashionMNIST
+04/18 09:20:48 PM | PRINT_FREQ=50
+04/18 09:20:48 PM | SEED=2
+04/18 09:20:48 PM | WEIGHT_DECAY=0.0003
+04/18 09:20:48 PM | WORKERS=1
+04/18 09:20:48 PM | 
+04/18 09:20:48 PM | Logger is set - training start
+04/18 09:20:51 PM | Model size = 3.157 MB
+04/18 09:20:51 PM | Epoch 0 LR 0.024999314617068905
+04/18 09:20:52 PM | 
+04/18 09:20:52 PM | Parameters:
+04/18 09:20:52 PM | AUX_WEIGHT=0.4
+04/18 09:20:52 PM | BATCH_SIZE=96
+04/18 09:20:52 PM | CUTOUT_LENGTH=16
+04/18 09:20:52 PM | DATA_PATH=./data/
+04/18 09:20:52 PM | DATASET=FashionMNIST
+04/18 09:20:52 PM | DROP_PATH_PROB=0.2
+04/18 09:20:52 PM | EPOCHS=300
+04/18 09:20:52 PM | GENOTYPE=Genotype(normal=[[('sep_conv_3x3', 0), ('dil_conv_5x5', 1)], [('skip_connect', 0), ('dil_conv_3x3', 2)], [('sep_conv_3x3', 1), ('skip_connect', 0)], [('sep_conv_3x3', 1), ('skip_connect', 0)]], normal_concat=range(2, 6), reduce=[[('max_pool_3x3', 0), ('max_pool_3x3', 1)], [('max_pool_3x3', 0), ('skip_connect', 2)], [('skip_connect', 3), ('max_pool_3x3', 0)], [('skip_connect', 2), ('max_pool_3x3', 0)]], reduce_concat=range(2, 6))
+04/18 09:20:52 PM | GPUS=[0]
+04/18 09:20:52 PM | GRAD_CLIP=5.0
+04/18 09:20:52 PM | INIT_CHANNELS=36
+04/18 09:20:52 PM | LAYERS=20
+04/18 09:20:52 PM | LR=0.025
+04/18 09:20:52 PM | MOMENTUM=0.9
+04/18 09:20:52 PM | NAME=FashionMNIST
+04/18 09:20:52 PM | PATH=augments\FashionMNIST
+04/18 09:20:52 PM | PRINT_FREQ=50
+04/18 09:20:52 PM | SEED=2
+04/18 09:20:52 PM | WEIGHT_DECAY=0.0003
+04/18 09:20:52 PM | WORKERS=1
+04/18 09:20:52 PM | 
