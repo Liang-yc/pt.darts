@@ -79,27 +79,27 @@ class SearchConfig(BaseConfig):
 class AugmentConfig(BaseConfig):
     def build_parser(self):
         parser = get_parser("Augment config")
-        parser.add_argument('--name', required=True)
-        parser.add_argument('--dataset', required=True, help='CIFAR10 / MNIST / FashionMNIST')
+        parser.add_argument('--name', default='FashionMNIST')
+        parser.add_argument('--dataset',default='FashionMNIST',  help='CIFAR10 / MNIST / FashionMNIST')
         parser.add_argument('--batch_size', type=int, default=96, help='batch size')
         parser.add_argument('--lr', type=float, default=0.025, help='lr for weights')
         parser.add_argument('--momentum', type=float, default=0.9, help='momentum')
         parser.add_argument('--weight_decay', type=float, default=3e-4, help='weight decay')
         parser.add_argument('--grad_clip', type=float, default=5.,
                             help='gradient clipping for weights')
-        parser.add_argument('--print_freq', type=int, default=200, help='print frequency')
+        parser.add_argument('--print_freq', type=int, default=50 , help='print frequency')
         parser.add_argument('--gpus', default='0', help='gpu device ids separated by comma. '
                             '`all` indicates use all gpus.')
-        parser.add_argument('--epochs', type=int, default=600, help='# of training epochs')
+        parser.add_argument('--epochs', type=int, default=300, help='# of training epochs')
         parser.add_argument('--init_channels', type=int, default=36)
         parser.add_argument('--layers', type=int, default=20, help='# of layers')
         parser.add_argument('--seed', type=int, default=2, help='random seed')
-        parser.add_argument('--workers', type=int, default=4, help='# of workers')
+        parser.add_argument('--workers', type=int, default=1, help='# of workers')
         parser.add_argument('--aux_weight', type=float, default=0.4, help='auxiliary loss weight')
         parser.add_argument('--cutout_length', type=int, default=16, help='cutout length')
         parser.add_argument('--drop_path_prob', type=float, default=0.2, help='drop path prob')
 
-        parser.add_argument('--genotype', required=True, help='Cell genotype')
+        parser.add_argument('--genotype',default="Genotype(normal=[[('sep_conv_3x3', 0), ('dil_conv_5x5', 1)], [('skip_connect', 0), ('dil_conv_3x3', 2)], [('sep_conv_3x3', 1), ('skip_connect', 0)], [('sep_conv_3x3', 1), ('skip_connect', 0)]],normal_concat=range(2, 6),reduce=[[('max_pool_3x3', 0), ('max_pool_3x3', 1)], [('max_pool_3x3', 0), ('skip_connect', 2)], [('skip_connect', 3), ('max_pool_3x3', 0)], [('skip_connect', 2), ('max_pool_3x3', 0)]],reduce_concat=range(2, 6))",  help='Cell genotype')
 
         return parser
 

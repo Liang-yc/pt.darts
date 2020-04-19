@@ -65,6 +65,9 @@ def main():
     lr_scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, config.epochs)
 
     best_top1 = 0.
+
+
+    model =torch.load("./checkpoint.pth.tar")
     # training loop
     for epoch in range(config.epochs):
         lr_scheduler.step()
